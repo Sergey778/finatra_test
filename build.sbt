@@ -46,3 +46,7 @@ libraryDependencies ++= Seq(
   "org.mockito" % "mockito-core" % versions.mockito % "test",
   "org.scalatest" %% "scalatest" % versions.scalatest % "test",
   "org.specs2" %% "specs2" % versions.specs2 % "test")
+
+libraryDependencies += "com.oracle" % "ojdbc6" % "12.1.0.1-atlassian-hosted"
+libraryDependencies += "org.postgresql" % "postgresql" % "9.4.1211"
+libraryDependencies += "com.github.t3hnar" %% "scala-bcrypt" % "2.6"
