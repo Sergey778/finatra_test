@@ -6,6 +6,8 @@
 
 
     <link rel="stylesheet" href="css/login-form/style.css">
+    <script src="css/login-form/jquery-3.1.1.min.js" type="application/javascript"></script>
+    <script src="css/login-form/login.js" type="application/javascript"></script>
 
 </head>
 
@@ -17,7 +19,7 @@
             <h1>Login</h1>
         </div>
 
-        <form id="login-form" action="/login" method="post">
+        <form id="login-form">
             <div class="control-group">
                 <input type="text" class="login-field" value="" placeholder="username" id="login-name" name="login-name">
                 <label class="login-field-icon fui-user" for="login-name"></label>
@@ -29,6 +31,9 @@
             </div>
             <input type="submit" class="btn btn-primary btl-large btn-block" value="Log In" type="submit">
         </form>
+        <div id="status-message">
+
+        </div>
 
         <div class="login-form-t">
             <a class="login-link" href="#">Lost your password?</a>

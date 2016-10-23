@@ -18,4 +18,8 @@ class HelloController extends Controller {
   filter[UserFilter].get("/index") { request: Request =>
     response.ok("Nice to see you through filter!")
   }
+
+  get("/loginform") { request: Request =>
+    response.ok.file("/login-form/index.html")
+  }
 }
